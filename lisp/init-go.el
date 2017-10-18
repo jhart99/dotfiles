@@ -1,6 +1,7 @@
 ;;; package --- init-go.el
 
 ;;; Commentary:
+;;; Stuff for go major mode
 ;;; Code:
 (use-package go-mode
 	:ensure t

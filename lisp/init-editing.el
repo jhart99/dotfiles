@@ -28,5 +28,8 @@
 
 (setq require-final-newline t)
 
+(global-set-key [f1] 'shell)
+(substitute-key-definition 'kill-buffer 'kill-buffer-and-window global-map)
+
 (provide 'init-editing)
 ;;; init-editing.el ends here

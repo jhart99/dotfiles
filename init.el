@@ -37,15 +37,23 @@
 (require 'init-evil)
 (require 'init-helm)
 (require 'init-sml)
+(require 'init-docker)
 (require 'init-kubernetes)
 (require 'init-python)
 (require 'init-flycheck)
 (require 'init-yaml)
 (require 'init-go)
+(require 'init-json)
+(require 'init-ess)
+(require 'init-markdown)
 (require 'init-magit)
+(require 'init-systemd)
+(require 'init-terraform)
 (xterm-mouse-mode)
 (require 'init-cm)
 
+(provide 'init)
+;;; init.el ends here
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -53,12 +61,10 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
 	 (quote
-		(kubernetes zenburn-theme use-package smart-mode-line helm evil dash company))))
+		(systemd zenburn-theme yapfify xpm use-package smart-mode-line pytest py-yapf markdown-mode kubernetes importmagic helm hc-zenburn-theme flycheck evil-magit ess dockerfile-mode company-jedi company-go))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-(provide 'init)
-;;; init.el ends here

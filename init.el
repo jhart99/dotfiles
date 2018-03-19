@@ -35,6 +35,7 @@
 (require 'init-zenburn)
 (require 'init-editing)
 (require 'init-evil)
+(require 'init-folding)
 (require 'init-helm)
 (require 'init-sml)
 (require 'init-docker)

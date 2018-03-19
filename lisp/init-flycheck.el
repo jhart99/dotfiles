@@ -9,7 +9,9 @@
 	:init
 	(global-flycheck-mode t)
 	:config
-	(setq-default flycheck-emacs-lisp-load-path 'inherit))
+	(setq-default flycheck-emacs-lisp-load-path 'inherit)
+    (flycheck-add-next-checker 'python-flake8 'python-pylint)
+    )
 
 (provide 'init-flycheck)
 ;;; init-flycheck.el ends here
